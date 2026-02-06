@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "likebook-wifi-book-uploader"
-version = "0.1.0"
+version = "0.1.1"
 description = "CLI to manage books on Likebook e-readers via WiFi Book Transfer"
 readme = "README.md"
 license = "GPL-3.0-or-later"

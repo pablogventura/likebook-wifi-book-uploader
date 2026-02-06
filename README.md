@@ -12,7 +12,7 @@ CLI to manage books on a Likebook (or compatible) e-reader running WiFi Book Tra
 **With pipx (recommended):**
 
 ```bash
-pipx install .
+pipx install likebook-wifi-book-uploader
 ```
 
 Or from the git repository:
@@ -24,14 +24,15 @@ pipx install git+https://github.com/pablogventura/likebook-wifi-book-uploader.gi
 **With pip:**
 
 ```bash
-pip install .
+pip install likebook-wifi-book-uploader
 ```
 
-**Without installing (run from source):**
+**From source (development):**
 
 ```bash
-pip install -r requirements.txt
-python likebook_wifi_book_uploader.py
+git clone https://github.com/pablogventura/likebook-wifi-book-uploader.git
+cd likebook-wifi-book-uploader
+pip install -e .   # or: pipx install .
 ```
 
 ## Usage
