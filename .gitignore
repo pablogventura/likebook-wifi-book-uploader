@@ -1,4 +1,4 @@
-# Entorno virtual
+# Virtual environment
 .venv/
 venv/
 env/
@@ -20,6 +20,6 @@ build/
 *.swp
 *.swo
 
-# Sistema
+# OS
 .DS_Store
 Thumbs.db
