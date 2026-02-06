@@ -9,8 +9,29 @@ CLI to manage books on a Likebook (or compatible) e-reader running WiFi Book Tra
 
 ## Installation
 
+**With pipx (recommended):**
+
+```bash
+pipx install .
+```
+
+Or from the git repository:
+
+```bash
+pipx install git+https://github.com/pablogventura/likebook-wifi-book-uploader.git
+```
+
+**With pip:**
+
+```bash
+pip install .
+```
+
+**Without installing (run from source):**
+
 ```bash
 pip install -r requirements.txt
+python likebook_wifi_book_uploader.py
 ```
 
 ## Usage
@@ -19,30 +40,30 @@ If no host is specified, the script scans your local network for the WiFi Book T
 
 ```bash
 # List books (auto-discovers server)
-python likebook-wifi-book-uploader.py
+likebook-wifi-book-uploader
 
 # Use specific IP
-python likebook-wifi-book-uploader.py -H 192.168.1.196
+likebook-wifi-book-uploader -H 192.168.1.196
 
 # Download book by index
-python likebook-wifi-book-uploader.py -g 3
+likebook-wifi-book-uploader -g 3
 
 # Download book by name
-python likebook-wifi-book-uploader.py -g "book.pdf"
+likebook-wifi-book-uploader -g "book.pdf"
 
 # Download to specific directory
-python likebook-wifi-book-uploader.py -g 1 -o ~/books
+likebook-wifi-book-uploader -g 1 -o ~/books
 
 # Upload file(s)
-python likebook-wifi-book-uploader.py -u book.pdf
-python likebook-wifi-book-uploader.py -u book1.pdf book2.epub
+likebook-wifi-book-uploader -u book.pdf
+likebook-wifi-book-uploader -u book1.pdf book2.epub
 
 # Delete book (asks confirmation)
-python likebook-wifi-book-uploader.py -d 5
-python likebook-wifi-book-uploader.py -d "book.pdf"
+likebook-wifi-book-uploader -d 5
+likebook-wifi-book-uploader -d "book.pdf"
 
 # Full help
-python likebook-wifi-book-uploader.py -h
+likebook-wifi-book-uploader -h
 ```
 
 ## Options

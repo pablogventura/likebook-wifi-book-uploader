@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "likebook-wifi-book-uploader"
+version = "0.1.0"
+description = "CLI to manage books on Likebook e-readers via WiFi Book Transfer"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = ["requests>=2.28.0"]
+
+[project.scripts]
+likebook-wifi-book-uploader = "likebook_wifi_book_uploader:main"
+
+[tool.setuptools]
+py-modules = ["likebook_wifi_book_uploader"]

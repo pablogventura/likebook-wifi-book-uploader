@@ -163,7 +163,8 @@ def delete_book(name: str, base_url: str) -> bool:
 
 def main():
     parser = argparse.ArgumentParser(
-        description="List, download, upload and delete books from WiFi Book Transfer."
+        prog="likebook-wifi-book-uploader",
+        description="List, download, upload and delete books from WiFi Book Transfer.",
     )
     parser.add_argument(
         "-d", "--delete",
