@@ -80,3 +80,13 @@ likebook-wifi-book-uploader -h
 ## Supported formats
 
 EPUB, TXT, PDF, MOBI, AZW, AZW3, FB2, DOC, DOCX, HTM, HTML, CBZ, CBT, CBR, JVU, DJVU, DJV, RTF, ZIP, RAR
+
+## Publishing to PyPI
+
+```bash
+pip install build twine
+./publish.sh           # Publish to PyPI
+./publish.sh --test    # Publish to Test PyPI
+```
+
+Create a PyPI API token at https://pypi.org/manage/account/token/ and configure twine (e.g. `~/.pypirc` or environment variables).
